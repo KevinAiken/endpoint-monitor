@@ -7,8 +7,9 @@
       "url": "https://yourserverx.com/api/health",
       "responses": {
         "200": "Server x is up.",
+        "500": "Server x returned a 500.",
         "504": "Service for server x is not running",
-        "unknownResponse": "No response from server x. Server is likely turned off.",
+        "unknownResponse": "Unknown response from server x.",
         "connectionFailure": "Failed to connect to server x."
       }
     },
@@ -18,7 +19,7 @@
         "200": "",
         "404": "Expected entity on server y was not found.",
         "504": "Service for server y is not running",
-        "unknownResponse": "No response from server y. Server is likely turned off.",
+        "unknownResponse": "Unknown response from server y.",
         "connectionFailure": "Failed to connect to server y."
       }
     }
